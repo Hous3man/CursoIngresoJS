@@ -5,11 +5,11 @@ function mostrar()
 {
 	// Declarar una variable
 	var vNombre;
-	// Asignación
-	vNombre= prompt("Nombre","Ingrese un nombre"); // asignando prompt a vNombre
 
+	// Asignar prompt a vNombre
+	vNombre = prompt("Nombre","Ingrese un nombre");
+
+ 	// Mostrar alerta en pantalla
 	alert(vNombre);
-
-
 }
 
