@@ -6,68 +6,68 @@ ej.: "la Resta es 750"*/
 function sumar()
 {	
 	// Declarar variables
-	let NumUno;
-	let NumDos;
-	let Result;
+	let numUno;
+	let numDos;
+	let result;
 	
 	// Convertir a Int los valores dados en el campo de texto
-	NumUno=parseInt(document.getElementById("txtIdNumeroUno").value);
-	NumDos=parseInt(document.getElementById("txtIdNumeroDos").value);
+	numUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+	numDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 	
 	// Sumar valores
-	Result=NumUno+NumDos;
+	result=numUno+numDos;
 
 	// Mostrar suma
-	alert("La suma es "+Result);
+	alert("La suma es "+result);
 }
 function restar()
 {
 	// Declarar variables
-	let NumUno;
-	let NumDos;
-	let Result;
+	let numUno;
+	let numDos;
+	let result;
 
 	// Convertir a Int los valores dados en el campo de texto
-	NumUno=parseInt(document.getElementById("txtIdNumeroUno").value);
-	NumDos=parseInt(document.getElementById("txtIdNumeroDos").value);
+	numUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+	numDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 
 	// Restar valores
-	Result=NumUno-NumDos;
+	result=numUno-numDos;
 
 	// Mostrar diferencia
-	alert("La diferencia es "+Result);
+	alert("La diferencia es "+result);
 }
 function multiplicar()
 { 
 	// Declarar variables
-	let NumUno;
-	let NumDos;
-	let Result;
+	let numUno;
+	let numDos;
+	let result;
 
 	// Convertir a Int los valores dados en el campo de texto
-	NumUno=parseInt(document.getElementById("txtIdNumeroUno").value);
-	NumDos=parseInt(document.getElementById("txtIdNumeroDos").value);
+	numUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+	numDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 	
 	// Multiplicar valores
-	Result=NumUno*NumDos;
+	result=numUno*numDos;
 
 	// Mostrar producto
-	alert("El producto es "+Result);
+	alert("El producto es "+result);
 }
 function dividir()
 {
 	// Declarar variables
-	let NumUno;
-	let NumDos;
-	let Result;
+	let numUno;
+	let numDos;
+	let result;
 	
 	// Convertir a Float los valores dados en el campo de texto
-	NumUno=parseFloat(document.getElementById("txtIdNumeroUno").value);
-	NumDos=parseFloat(document.getElementById("txtIdNumeroDos").value);
+	numUno=parseFloat(document.getElementById("txtIdNumeroUno").value);
+	numDos=parseFloat(document.getElementById("txtIdNumeroDos").value);
 	
 	// Dividir valores
-	Result=NumUno/NumDos;
+	result=numUno/numDos;
 
 	// Mostrar cociente
-	alert("El cociente es "+Result.toFixed(2));
+	alert("El cociente es "+result.toFixed(2));
 }

@@ -10,7 +10,7 @@ function mostrar()
 	vNombre = document.getElementById("txtIdNombre").value;
 
 	// Mostrar alerta en pantalla
-	alert(vNombre);
+	alert("Tu nombre es "+vNombre);
 
 	/* var nombreIngresado;
 	nombreIngresado=txtIdNombre.value;

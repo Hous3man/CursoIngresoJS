@@ -6,15 +6,15 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 	// Declarar variables
-	let Sueldo;
-	let Descuento;
+	let sueldo;
+	let descuento;
 
 	// Convertir a Int los valores dados en el campo de texto "Ingrese importe"
-	Sueldo=parseInt(document.getElementById("txtIdImporte").value);
+	sueldo=parseInt(document.getElementById("txtIdImporte").value);
 
-	// Calcular aumento del 10% del sueldo
-	Descuento=Sueldo-Sueldo*0.25;
+	// Calcular descuento del 25% del sueldo
+	descuento=sueldo-sueldo*0.25;
 
-	// Cargar sueldo con aumento en cuadro de texto "Resultado"
-	document.getElementById("txtIdResultado").value=Descuento;
+	// Cargar sueldo con descuento en cuadro de texto "Resultado"
+	document.getElementById("txtIdResultado").value=descuento;
 }

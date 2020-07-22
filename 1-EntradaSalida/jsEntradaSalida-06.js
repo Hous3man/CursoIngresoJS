@@ -5,15 +5,15 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 	// Declarar variables
-	var NumUno;
-	var NumDos;
-	var Result;
+	var numUno;
+	var numDos;
+	var result;
 
 	// Asignar variables a elementos por ID
-	NumUno = document.getElementById("txtIdNumeroUno").value;
-	NumDos = document.getElementById("txtIdNumeroDos").value;
-	Result = parseInt(NumUno) + parseInt(NumDos);
+	numUno = document.getElementById("txtIdNumeroUno").value;
+	numDos = document.getElementById("txtIdNumeroDos").value;
+	result = parseInt(numUno) + parseInt(numDos);
 
 	// Mostrar sumado
-	alert("La suma es "+Result);
+	alert("La suma es "+result);
 }

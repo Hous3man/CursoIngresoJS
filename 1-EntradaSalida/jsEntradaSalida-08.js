@@ -6,17 +6,17 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 { 
 	// Declarar variables
-	let NumUno;
-	let NumDos;
-	let Result;
+	let numUno;
+	let numDos;
+	let result;
 
 	// Convertir a Int los valores dados en el campo de texto
-	NumUno=parseInt(document.getElementById("txtIdNumeroDividendo").value);
-	NumDos=parseInt(document.getElementById("txtIdNumeroDivisor").value);
+	numUno=parseInt(document.getElementById("txtIdNumeroDividendo").value);
+	numDos=parseInt(document.getElementById("txtIdNumeroDivisor").value);
 
 	// Realizar calculo del resto
-	Result=NumUno%NumDos;
+	result=numUno%numDos;
 
 	// Mostrar resto
-	alert("El resto es "+Result);
+	alert("El resto es "+result);
 }

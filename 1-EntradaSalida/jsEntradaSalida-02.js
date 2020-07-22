@@ -10,6 +10,6 @@ function mostrar()
 	vNombre = prompt("Nombre","Ingrese un nombre");
 
  	// Mostrar alerta en pantalla
-	alert(vNombre);
+	alert("Tu nombre es "+vNombre);
 }
 
