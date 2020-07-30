@@ -5,6 +5,25 @@ function mostrar() {
 	// Tomar valor del campo selector
 	vHora = parseInt(document.getElementById("txtIdHora").value);
 
+	// Calcular casos y mostrar mensaje
+	if(vHora>=7 && vHora<=11)
+	{
+		alert("Es de mañana.");
+	}
+	else if(vHora>=12 && vHora<=19)
+	{
+		alert("Es de tarde.");
+	}
+	else if((vHora>=0 && vHora<=6) || (vHora>=20 && vHora<=24))
+	{
+		alert("Es de noche.");
+	}
+	else
+	{
+		alert("La hora no existe.")
+	}
+}
+	/*
 	// Plantear casos y mostrar mensaje según corresponda
 	switch (vHora) {
 		case 7:
@@ -34,7 +53,8 @@ function mostrar() {
 			alert("La hora no existe.")
 			break;
 	}
-}//FIN DE LA FUNCIÓN
+	*/
+//FIN DE LA FUNCIÓN
 //tomo la hora
 //var horaDelDia =txtIdHora.value;
 //alert(horaDelDia);
