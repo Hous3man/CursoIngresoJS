@@ -3,21 +3,36 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
 {	
-		// Declarar e inicializar variables
-		let acumulador=0;
-		let num;
-		let respuesta="si";
+		// Declarar variables e Inicializar variables
+		let num
+		let max
+		let min
+		let resp="si";
 
-		do 
+		// Configurar variables para entrar al do
+		num=parseInt(prompt("Ingrese un número: "));
+		min=num;
+		max=num;
+		resp=prompt("Desea ingresas otro número? si/no ");
+
+		// Establecer condiciones
+		do
 		{
-			num=parseInt(prompt("Ingrese un número : "));
-			acumulador=acumulador+num;
-			respuesta=prompt("Desea ingresas otro número? si/no ");
-		
-		} while (respuesta=="si");
+			num=parseInt(prompt("Ingrese un número: "));
+			if(num<min)
+			{
+				min=num
+			}else if(num>max)
+			{
+				max=num
+			}
+			resp=prompt("Desea ingresas otro número? si/no ");
 
-		document.getElementById("txtIdMaximo").value=acumulador;
-		document.getElementById("txtIdMinimmo").value=acumulador/contador;
+		} while(resp=="si")
+
+		// Cargar resultados en los campos
+		document.getElementById("txtIdMaximo").value=max;
+		document.getElementById("txtIdMinimo").value=min;
 		
 }//FIN DE LA FUNCIÓN
 /*// declarar variables
@@ -36,3 +51,17 @@ while(respuesta=="si")
 }
 txtIdMaximo.value=numeroMaximo;
 txtIdMinimmo.value=numeroMinimo;*/
+
+/*// Establecer condiciones
+		while (resp=="si")
+		{
+			num=parseInt(prompt("Ingrese un número: "));
+			if(num<min)
+			{
+				min=num
+			}else if(num>max)
+			{
+				max=num
+			}
+			resp=prompt("Desea ingresas otro número? si/no ");
+		}*/

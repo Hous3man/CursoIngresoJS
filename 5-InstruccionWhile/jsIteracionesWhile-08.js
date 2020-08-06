@@ -19,7 +19,7 @@ function mostrar()
 		}
 		else
 		{
-			productoNeg=productoNeg*num
+			productoNeg=productoNeg*num;
 		}
 		respuesta=prompt("Desea ingresas otro número? si/no ");
 	
